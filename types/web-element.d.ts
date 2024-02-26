@@ -140,6 +140,10 @@ export interface ScopedElement extends Element, PromiseLike<WebElement> {
   getRect(): ElementValue<ScopedElementRect>;
 
   getTagName(): ElementValue<string>;
+    
+  isVisible() : ElementValue<boolean>; 
+
+  isDisplayed(): ElementValue<boolean>;
 
   getText(): ElementValue<string>;
 
