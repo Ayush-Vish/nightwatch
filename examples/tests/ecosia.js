@@ -13,9 +13,7 @@ describe('Ecosia.org Demo', function() {
       .setValue('input[type=search]', 'nightwatch')
       .assert.visible('button[type=submit]')
       .click('button[type=submit]')
-      .isVisible('html')
-      .element('#main ul li a.first').getText();
-
+      .assert.textContains('.layout__content', 'Nightwatch.js');
   });
 
   after(browser => browser.end());
