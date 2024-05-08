@@ -159,5 +159,5 @@ describe('element().getCssProperty() command', function () {
     assert.strictEqual(await resultPromise.assert.not.contains('150x'), '150px');
     assert.strictEqual(await resultPromise.assert.not.matches(/150[a-z]{2}x/), '150px');
   });
-
+  
 });
